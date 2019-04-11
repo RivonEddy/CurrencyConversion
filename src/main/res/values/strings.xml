@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">CurrencyConverter</string>
+    <string name="header">Convert Your Currency</string>
+    <string name="dollar">Convert to US Dollar</string>
+    <string name="euro">Convert to Euro</string>
+    <string name="pound_sterling">Convert to British Pound Sterling</string>
+    <string name="input_amount">Enter ammount to convert..</string>
+    <string name="country_prompt">Choose a country</string>
+
+    <string-array name="country_arrays">
+        <item>Angolan Kwanza</item>
+        <item>Argentine Peso</item>
+        <item>Australian Dollar</item>
+        <item>Bitcoin Cash</item>
+        <item>Brazilian Real</item>
+        <item>Chinese Yuan</item>
+        <item>Egyptian Pound</item>
+        <item>Ghannian Cedi</item>
+        <item>Indian Rupee</item>
+        <item>Liberian Dollar</item>
+        <item>Mauritian Rupee</item>
+        <item>Nigerian Naira</item>
+    </string-array>
+</resources>

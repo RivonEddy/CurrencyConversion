@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EuroActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/head_text_euro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/euro"
+            android:gravity="center_horizontal"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="casual"
+            android:layout_marginBottom="50dp"/>
+
+        <Spinner
+            android:id="@+id/spinner_euro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/country_arrays"
+            android:prompt="@string/country_prompt"
+            android:layout_marginBottom="20dp" />
+
+        <EditText
+            android:id="@+id/edit_text_euro"
+            android:layout_below="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/input_amount"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            android:textAlignment="center"
+            android:padding="15dp"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/text_view_euro"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/colorAsh"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:padding="30dp"
+            android:layout_marginBottom="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+
+            <Button
+                android:id="@+id/btn_convert_euro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Convert"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:background="@drawable/button_radius"
+                android:layout_weight="1"
+                android:layout_margin="10dp"/>
+
+            <Button
+                android:id="@+id/btn_reverse_euro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reverse"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:background="@drawable/button_radius"
+                android:layout_weight="1"
+                android:layout_margin="10dp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_reset_euro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:background="@drawable/button_radius"/>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
